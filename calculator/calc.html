@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calc_body">
+            <div class="screen_section">
+                <textarea name="" readonly id="screen" placeholder="0"></textarea>
+            </div>
+            <div class="act_body">
+                <table>
+                    <tr>
+                        <td onclick="permut()">p<sup>n</sup><sub>r</sub></td>
+                        <td onclick="combi()">c<sup>n</sup><sub>r</sub></td>
+                    </tr>
+                    <tr>
+                        <td onclick="ce()" class="spliced">c</td>
+                        <td class="displayable science">(</td>
+                        <td class="displayable science">)</td>
+                        <td onclick="pi()" class="science">PI</td>
+                    </tr>
+                    <tr>
+                        <td onclick="squareroot()" class="science">^<sup>1/2</sup></td>
+                        <td onclick="percentage()" class="science">%</td>
+                        <td onclick="factorial()" class="science">!</td>
+                        <td class="displayable purple">/</td>
+                    </tr>
+                    <tr>
+                        <td onclick="sin()" class="science">sin</td>
+                        <td onclick="cos()" class="science">cos</td>
+                        <td onclick="tan()" class="science">tan</td>
+                        <td class="displayable purple">*</td>
+                    </tr>
+                    <tr>
+                        <td class="bs" onclick="b_two()">b<sub>2</sub></td>
+                        <td class="bs" onclick="b_six()">b<sub>6</sub></td>
+                        <td class="bs" onclick="b_seven()">b<sub>7</sub></td>
+                        <td class="bs" onclick="b_eight()">b<sub>8</sub></td>
+
+                    </tr>
+                    <tr>
+                        <td class="bs" onclick="b_three()">b<sub>3</sub></td>
+                        <td class="bs" onclick="b_four()">b<sub>4</sub></td>
+                        <td class="bs" onclick="b_five()">b<sub>5</sub></td>
+                        <td class="bs" onclick="b_nine()">b<sub>9</sub></td>
+
+                    </tr>
+                    <tr>
+                        <td class="displayable">7</td>
+                        <td class="displayable">8</td>
+                        <td class="displayable">9</td>
+                        <td class="displayable purple">-</td>
+                    </tr>
+                    <tr>
+                        <td class="displayable">4</td>
+                        <td class="displayable">5</td>
+                        <td class="displayable">6</td>
+                        <td class="displayable purple">+</td>
+                    </tr>
+                    <tr>
+                        <td class="displayable">1</td>
+                        <td class="displayable">2</td>
+                        <td class="displayable">3</td>
+                        <td class="displayable purple">0</td>
+                    </tr>
+                    <tr>
+                        <td onclick="off()" class="switch">off</td>
+                        <td onclick="ace()" class="switch">ac</td>
+                        <td class="displayable">.</td>
+                        <td onclick="resolve()" class="equal">=</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
